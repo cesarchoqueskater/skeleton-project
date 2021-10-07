@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skeleton</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+         :root {
+            --white: #FFFFFF;
+            --skeleton: #C4C4C4;
+            --background: #ECF0F1;
+        }
+        
+        body {
+            background-color: var(--background);
+        }
+        
+        header {
+            margin-block-end: 16px;
+        }
+        
+        .card-header {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 8px;
+            /* block-size: 273px; */
+            /* border: 1px solid red; */
+            padding-block: 27px;
+            padding-inline: 10px;
+            background-color: var(--white);
+        }
+        
+        .card-image-header {
+            background-color: var(--skeleton);
+            block-size: 5rem;
+            inline-size: 5rem;
+        }
+        
+        .card-title-header {
+            background-color: var(--skeleton);
+            inline-size: 11.5rem;
+            block-size: 1.1rem;
+        }
+        
+        .content {
+            display: grid;
+            /* grid-template-columns: repeat(3, auto); */
+            /* grid-template-rows: repeat(9, 1fr); */
+            gap: 18px;
+            justify-items: center;
+        }
+        
+        .card-content {
+            background-color: var(--white);
+            border-radius: 12px;
+            block-size: 148px;
+            inline-size: 343px;
+            display: flex;
+            flex-direction: row;
+            gap: 8px;
+            align-items: center;
+            padding: 16px;
+        }
+        
+        .card-image {
+            background-color: var(--skeleton);
+            border-radius: 8px;
+            block-size: 116px;
+            inline-size: 85px;
+            align-items: center;
+        }
+        
+        .card-description {
+            display: flex;
+            flex-direction: column;
+            gap: 9px;
+        }
+        
+        .card-description-subject {
+            border-radius: 2px;
+            background-color: var(--skeleton);
+        }
+        
+        .subject-small {
+            block-size: 17px;
+            inline-size: 143px;
+        }
+        
+        .subject-medium {
+            block-size: 17px;
+            inline-size: 163px;
+        }
+        
+        .subject-large {
+            block-size: 17px;
+            inline-size: 185px;
+        }
+        
+        .card-writer {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-block-start: 16px;
+            gap: 8px;
+        }
+        
+        .writer-image {
+            background-color: var(--skeleton);
+            border-radius: 50%;
+            block-size: 16px;
+            inline-size: 16px;
+        }
+        
+        .writer-name {
+            background-color: var(--skeleton);
+            border-radius: 2px;
+            block-size: 8px;
+            inline-size: 93px;
+        }
+        
+        .writer-date {
+            background-color: var(--skeleton);
+            border-radius: 2px;
+            block-size: 8px;
+            inline-size: 36px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="card-header">
+            <div class="card-image-header"></div>
+            <h2 class="card-title-header"></h2>
+        </div>
+    </header>
+    <section>
+        <div class="content">
+            <div class="card-content">
+                <div class="card-image"></div>
+                <div class="card-description">
+                    <div class="card-description-subject subject-medium"></div>
+                    <div class="card-description-subject subject-small"></div>
+                    <div class="card-description-subject subject-large"></div>
+                    <div class="card-writer">
+                        <div class="writer-image"></div>
+                        <div class="writer-name"></div>
+                        <div class="writer-date"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
