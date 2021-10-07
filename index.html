@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <title>Skeleton</title>
     <style>
         * {
@@ -15,7 +18,7 @@
         
          :root {
             --white: #FFFFFF;
-            --skeleton: #C4C4C4;
+            --skeleton: #D2D2D2;
             --background: #ECF0F1;
         }
         
@@ -39,7 +42,12 @@
             background-color: var(--white);
         }
         
-        .card-image-header {
+        .card-image {
+            background-color: var(--skeleton);
+            align-items: center;
+        }
+        
+        .header-background {
             background-color: var(--skeleton);
             block-size: 5rem;
             inline-size: 5rem;
@@ -53,30 +61,30 @@
         
         .content {
             display: grid;
-            /* grid-template-columns: repeat(3, auto); */
-            /* grid-template-rows: repeat(9, 1fr); */
+            grid-template-columns: repeat(auto-fill, 343px);
             gap: 18px;
             justify-items: center;
+            margin: auto;
+            max-inline-size: 343px;
+            margin-block-end: 2rem;
+        }
+        
+        .content-background {
+            border-radius: 8px;
+            block-size: 7.25rem;
+            inline-size: 5.3rem;
         }
         
         .card-content {
             background-color: var(--white);
             border-radius: 12px;
-            block-size: 148px;
-            inline-size: 343px;
+            block-size: 9.25rem;
+            inline-size: 21.4rem;
             display: flex;
             flex-direction: row;
             gap: 8px;
             align-items: center;
-            padding: 16px;
-        }
-        
-        .card-image {
-            background-color: var(--skeleton);
-            border-radius: 8px;
-            block-size: 116px;
-            inline-size: 85px;
-            align-items: center;
+            padding: 1rem;
         }
         
         .card-description {
@@ -110,6 +118,13 @@
             flex-direction: row;
             align-items: center;
             margin-block-start: 16px;
+            gap: 16px;
+        }
+        
+        .writer-information {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
             gap: 8px;
         }
         
@@ -133,27 +148,165 @@
             block-size: 8px;
             inline-size: 36px;
         }
+        
+        @media screen and (min-width:705px) {
+            header {
+                margin-block-end: 63px;
+            }
+            .card-header {
+                justify-content: center;
+            }
+            .content {
+                gap: 32px;
+                justify-items: center;
+                justify-content: center;
+                /* max-block-size: 508px; */
+                max-inline-size: 1093px;
+            }
+        }
     </style>
 </head>
 
 <body>
     <header>
         <div class="card-header">
-            <div class="card-image-header"></div>
+            <div class="card-image header-background"></div>
             <h2 class="card-title-header"></h2>
         </div>
     </header>
     <section>
         <div class="content">
             <div class="card-content">
-                <div class="card-image"></div>
+                <div class="card-image content-background"></div>
                 <div class="card-description">
                     <div class="card-description-subject subject-medium"></div>
                     <div class="card-description-subject subject-small"></div>
                     <div class="card-description-subject subject-large"></div>
                     <div class="card-writer">
-                        <div class="writer-image"></div>
-                        <div class="writer-name"></div>
+                        <div class="writer-information">
+                            <div class="writer-image"></div>
+                            <div class="writer-name"></div>
+                        </div>
+                        <div class="writer-date"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-content">
+                <div class="card-image content-background"></div>
+                <div class="card-description">
+                    <div class="card-description-subject subject-medium"></div>
+                    <div class="card-description-subject subject-small"></div>
+                    <div class="card-description-subject subject-large"></div>
+                    <div class="card-writer">
+                        <div class="writer-information">
+                            <div class="writer-image"></div>
+                            <div class="writer-name"></div>
+                        </div>
+                        <div class="writer-date"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-content">
+                <div class="card-image content-background"></div>
+                <div class="card-description">
+                    <div class="card-description-subject subject-medium"></div>
+                    <div class="card-description-subject subject-small"></div>
+                    <div class="card-description-subject subject-large"></div>
+                    <div class="card-writer">
+                        <div class="writer-information">
+                            <div class="writer-image"></div>
+                            <div class="writer-name"></div>
+                        </div>
+                        <div class="writer-date"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-content">
+                <div class="card-image content-background"></div>
+                <div class="card-description">
+                    <div class="card-description-subject subject-medium"></div>
+                    <div class="card-description-subject subject-small"></div>
+                    <div class="card-description-subject subject-large"></div>
+                    <div class="card-writer">
+                        <div class="writer-information">
+                            <div class="writer-image"></div>
+                            <div class="writer-name"></div>
+                        </div>
+                        <div class="writer-date"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-content">
+                <div class="card-image content-background"></div>
+                <div class="card-description">
+                    <div class="card-description-subject subject-medium"></div>
+                    <div class="card-description-subject subject-small"></div>
+                    <div class="card-description-subject subject-large"></div>
+                    <div class="card-writer">
+                        <div class="writer-information">
+                            <div class="writer-image"></div>
+                            <div class="writer-name"></div>
+                        </div>
+                        <div class="writer-date"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-content">
+                <div class="card-image content-background"></div>
+                <div class="card-description">
+                    <div class="card-description-subject subject-medium"></div>
+                    <div class="card-description-subject subject-small"></div>
+                    <div class="card-description-subject subject-large"></div>
+                    <div class="card-writer">
+                        <div class="writer-information">
+                            <div class="writer-image"></div>
+                            <div class="writer-name"></div>
+                        </div>
+                        <div class="writer-date"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-content">
+                <div class="card-image content-background"></div>
+                <div class="card-description">
+                    <div class="card-description-subject subject-medium"></div>
+                    <div class="card-description-subject subject-small"></div>
+                    <div class="card-description-subject subject-large"></div>
+                    <div class="card-writer">
+                        <div class="writer-information">
+                            <div class="writer-image"></div>
+                            <div class="writer-name"></div>
+                        </div>
+                        <div class="writer-date"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-content">
+                <div class="card-image content-background"></div>
+                <div class="card-description">
+                    <div class="card-description-subject subject-medium"></div>
+                    <div class="card-description-subject subject-small"></div>
+                    <div class="card-description-subject subject-large"></div>
+                    <div class="card-writer">
+                        <div class="writer-information">
+                            <div class="writer-image"></div>
+                            <div class="writer-name"></div>
+                        </div>
+                        <div class="writer-date"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-content">
+                <div class="card-image content-background"></div>
+                <div class="card-description">
+                    <div class="card-description-subject subject-medium"></div>
+                    <div class="card-description-subject subject-small"></div>
+                    <div class="card-description-subject subject-large"></div>
+                    <div class="card-writer">
+                        <div class="writer-information">
+                            <div class="writer-image"></div>
+                            <div class="writer-name"></div>
+                        </div>
                         <div class="writer-date"></div>
                     </div>
                 </div>
