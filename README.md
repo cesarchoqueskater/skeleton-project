@@ -1,7 +1,9 @@
 <div align="center">
 <img width="120px"  src="https://raw.githubusercontent.com/no-te-rindas/logo/main/Logo/LeonidasEsteban-destello-envolvente-cuadrada.png" />
 </div>
+
 # Proyecto: Skeleton :black_circle: 
+Se usa la API de Lorem [Picsum](https://picsum.photos/), para mostrar imagenes y detalles de esto, previamente haciendo un skeleton, de una vista previa del contenido a mostrar segundos despues.
 
 ### Demo :tv:
 
