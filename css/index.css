@@ -8,6 +8,8 @@
     --white: #FFFFFF;
     --skeleton: #D2D2D2;
     --background: #ECF0F1;
+    --title-header: #0A004E;
+    --time-color: #9B9DA5;
 }
 
 body {
@@ -24,15 +26,12 @@ header {
     flex-direction: row;
     align-items: center;
     gap: 8px;
-    /* block-size: 273px; */
-    /* border: 1px solid red; */
     padding-block: 27px;
     padding-inline: 10px;
     background-color: var(--white);
 }
 
 .card-image {
-    /* background-color: var(--skeleton); */
     align-items: center;
 }
 
@@ -53,7 +52,7 @@ header {
     block-size: 1.1rem;
     font-weight: 700;
     font-size: 18px;
-    color: #0A004E;
+    color: var(--title-header);
 }
 
 .card-title-header a {
@@ -84,7 +83,7 @@ header {
     display: flex;
     flex-direction: row;
     gap: 8px;
-    align-items: center;
+    /* align-items: center; */
     padding: 1rem;
 }
 
@@ -158,13 +157,13 @@ header {
     font-size: 12px;
     font-weight: 500;
     line-height: 14px;
-    color: #9B9DA5;
+    color: var(--time-color);
 }
 
 .writer-date p::before {
     content: '';
     border-radius: 50%;
-    background-color: #9B9DA5;
+    background-color: var(--time-color);
     block-size: 8px;
     inline-size: 8px;
     display: inline-block;

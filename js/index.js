@@ -10,7 +10,7 @@ function loader(isLoading) {
     if (isLoading) {
         const $cardTitleHeader = document.querySelector('#cardTitleHeader')
         $cardTitleHeader.classList.remove('skeleton')
-        cardTitleHeader.style.inlineSize = 'auto'
+        cardTitleHeader.style.inlineSize = 'max-content'
         const $cardImageHeader = document.querySelector('#cardImageHeader')
         $cardImageHeader.classList.remove('skeleton')
 
