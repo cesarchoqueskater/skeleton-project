@@ -35,6 +35,14 @@ header {
     align-items: center;
 }
 
+.card-image a {
+    cursor: pointer;
+}
+
+.card-image:hover {
+    transform: scale(1.05);
+}
+
 .card-image img {
     width: 100%;
     height: 100%;

@@ -24,7 +24,7 @@ export function cardContentTemplate(index) {
 
 export function setImage(value, index) {
     const $cardImage = document.querySelector(`#content-${index} .card-image`)
-    $cardImage.innerHTML = `<img src="https://picsum.photos/id/${value.id}/200/300" alt="${value.author}"/>`
+    $cardImage.innerHTML = `<a href="${value.url}" target="_blank"><img src="https://picsum.photos/id/${value.id}/200/300" alt="${value.author}"/><a>`
 }
 
 export function setTitle(value, index) {
