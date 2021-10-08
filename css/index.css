@@ -32,7 +32,7 @@ header {
 }
 
 .card-image {
-    background-color: var(--skeleton);
+    /* background-color: var(--skeleton); */
     align-items: center;
 }
 
@@ -44,15 +44,20 @@ header {
 }
 
 .header-background {
-    background-color: var(--skeleton);
     block-size: 5rem;
     inline-size: 5rem;
 }
 
 .card-title-header {
-    background-color: var(--skeleton);
     inline-size: 11.5rem;
     block-size: 1.1rem;
+    font-weight: 700;
+    font-size: 18px;
+    color: #0A004E;
+}
+
+.card-title-header a {
+    text-decoration: none;
 }
 
 .content {
@@ -156,7 +161,7 @@ header {
     color: #9B9DA5;
 }
 
-.writer-date::before {
+.writer-date p::before {
     content: '';
     border-radius: 50%;
     background-color: #9B9DA5;
